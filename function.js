@@ -1,6 +1,6 @@
 // Fonction pour afficher un projet
 function openProject(projectName) {
-    alert('Vous avez cliqu� sur ' + projectName);
+    window.location.href = projectName
 }
 // Gestion du formulaire de contact
 document.getElementById('contact-form').addEventListener('submit', function(event) {

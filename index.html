@@ -24,29 +24,32 @@
     <section id="about">
         <div class="container">
             <h2>À propos de moi</h2>
-            <p>Je m'appelle Noé KRZYSZKOWIAK'</p>
+            <p>Je m'appelle Noé KRZYSZKOWIAK.</p>
             <p>Je suis un développeur passionné par le jeu vidéo et l'ia.</p>
-            <p>J'étudi à l'université d'Artois de Lens à la faculté des sciences Jean-Perrin</p>
+            <p>J'étudie à l'université d'Artois de Lens à la faculté des sciences Jean-Perrin.</p>
         </div>
     </section>
 
     <section id="projects">
         <div class="container">
             <h2>Mes Projets</h2>
-            <div class="project-card" onclick="openProject('Projet pacman')">
+            <div class="project-card" onclick="openProject('pacman.html')">
                 <h3>Projet Pacman</h3>
                 <p>Le projet consiste à recréer le jeu Pacman en groupe en utilisant uniquement le outils de base du shell .<br /> Et en utilisant au minimum la structure de donnée des listes</p>
-                <img src="URL" alt="Description de l'image">
-                <a href="fichiers/PacmanGame.zip" download> Télécharger le fichier ZIP du jeu</a>
+                <p>Exemple de l'une des cartes ci-dessous</p>
+                <img id="pixel_art_img" src="images/pacman.png" alt="Description de l'image">
+                <a href="fichiers/PacmanGame.zip" download> Télécharger le fichier ZIP du projet</a>
             </div>
             <div class="project-card" onclick="openProject('Projet JO')">
                 <h3>Base de donnée JO 2024</h3>
                 <p>Le but de ce projet est de ,en équipe réaliser une base de donnée sur les jeux olympiques de Paris 2024 .<br /> La base de donnée à été réalisés avant les compétitions .</p>
                 <a href="fichiers/Crevettes_semaine13.zip" download>Quelques algo de web scraping qui ne sont plus à jour</a>
             </div>
-            <div class="project-card" onclick="openProject('Projet Jeu PixelArt')">
+            <div class="project-card" onclick="openProject('pixel_art.html')">
                 <h3>Jeu PixelArt</h3>
                 <p>Le jeu se passe dans un monde médiéval fantassy mais pas que.<br />C'est un jeu plateformer 2D aventure et humoristique</p>
+                <p>Le jeu est encore au début du développement</p>
+                <img id="pixel_art_img" src="images/myGame.png" alt="Description de l'image">
             </div>
         </div>
     </section>
@@ -61,14 +64,23 @@
                 <li>Cambridge</li>
                 <li>PSC1</li>
                 <li>Permis B</li>
+                <li>Création de jeu de rôle</li>
             </ul>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2>Contact</h2>
-            <p>En cours de création non fonctionnel pour le moment</p>
+            <h2>Mes contacts</h2>
+            <ul>
+                <li>Mail : noecool@outlook.fr</li>
+                <li>Numéro de téléphone : 0767383593</li>
+                <li>Tourcoing/Lens</li>
+            </ul>
+            <br />
+        </div>
+        <div class="container">
+            <h2>Me contacter</h2>
             <form id="contact-form" action="mailto:noecool@outlook.fr" method="POST">
                 <label for="name">Nom:</label>
                 <input type="text" id="name" name="name" required>

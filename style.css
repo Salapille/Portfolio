@@ -61,6 +61,12 @@ section {
     .project-card:hover {
         background-color: #e7e7e7;
     }
+#pixel_art_img{
+    max-width: 60%;
+    max-height: 20%;
+    width: auto;
+    height: auto;
+}
 /* Form styling */
 form {
     display: flex;
@@ -95,4 +101,8 @@ footer {
     position: unset;
     width: 100%;
     bottom: 0;
+}
+/* Global */
+ul {
+    list-style-type: none;
 }
