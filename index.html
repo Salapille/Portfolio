@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="function.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <p>Je m'appelle Noé KRZYSZKOWIAK'</p>
+            <p>Je suis un développeur passionné par le jeu vidéo et l'ia.</p>
+            <p>J'étudi à l'université d'Artois de Lens à la faculté des sciences Jean-Perrin</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Mes Projets</h2>
+            <div class="project-card" onclick="openProject('Projet pacman')">
+                <h3>Projet Pacman</h3>
+                <p>Le projet consiste à recréer le jeu Pacman en groupe en utilisant uniquement le outils de base du shell .<br /> Et en utilisant au minimum la structure de donnée des listes</p>
+                <img src="URL" alt="Description de l'image">
+                <a href="fichiers/PacmanGame.zip" download> Télécharger le fichier ZIP du jeu</a>
+            </div>
+            <div class="project-card" onclick="openProject('Projet JO')">
+                <h3>Base de donnée JO 2024</h3>
+                <p>Le but de ce projet est de ,en équipe réaliser une base de donnée sur les jeux olympiques de Paris 2024 .<br /> La base de donnée à été réalisés avant les compétitions .</p>
+                <a href="fichiers/Crevettes_semaine13.zip" download>Quelques algo de web scraping qui ne sont plus à jour</a>
+            </div>
+            <div class="project-card" onclick="openProject('Projet Jeu PixelArt')">
+                <h3>Jeu PixelArt</h3>
+                <p>Le jeu se passe dans un monde médiéval fantassy mais pas que.<br />C'est un jeu plateformer 2D aventure et humoristique</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="other">
+        <div class="container">
+            <h3>Autres choses intéressantes à savoir sur moi</h3>
+            <ul>
+                <li>Participant àl'ARC 2023-2024 <a href="https://artoistv.univ-artois.fr/video/5712-arc-artois-programming-contest-2324/">team : STMG32G431CB</a> </li>
+                <li>Participant au SWERC 2023-2024 <a href="https://swerc.eu/2023/theme/scoreboard/domjudge.lip6.fr/public.html"> team : STM32G431CB</a> <a href="https://swerc.eu/2023/theme/scoreboard/domjudge.lip6.fr/public/team/49.html">overwiev of the team</a></li>
+                <li>Participant au SWERC 2024-2025 <a href="https://www.linkedin.com/posts/association-des-informaticiens-de-l-artois_swerc-swerc2024-programmation-activity-7269278992526987264-KnSL?utm_source=share&utm_medium=member_desktop"> team : test = doubt</a></li>
+                <li>Cambridge</li>
+                <li>PSC1</li>
+                <li>Permis B</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>En cours de création non fonctionnel pour le moment</p>
+            <form id="contact-form" action="mailto:noecool@outlook.fr" method="POST">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Mon Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
