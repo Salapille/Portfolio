@@ -1,72 +1,93 @@
 ﻿<!DOCTYPE html>
-
-<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="fr">
 <head>
-    <meta charset="utf-8" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="function.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cryptic Shop — Détails du projet</title>
+  <link rel="stylesheet" href="style2.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Bienvenue sur mon Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#projects">Projet</a></li>
-                    <li><a href="#contact">Participants</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="project-header">
+    <h1>Cryptic Shop</h1>
+    <nav class="project-nav">
+      <ul>
+        <li><button data-section="about" class="active">À propos</button></li>
+        <li><button data-section="tools">Outils</button></li>
+        <li><button data-section="universe">L’univers</button></li>
+        <li><button data-section="gameplay">Gameplay</button></li>
+        <li><button data-section="team">Participants</button></li>
+        <li><a href="index.html"><button >Home</button></a></li>
+        
+      </ul>
+    </nav>
+  </header>
 
-    <section id="about">
-        <div class="container">
-            <h1>Projet "terminé"</h1>
-            <h2>À propos du jeu</h2>
-            <h3>Contexte</h3>
-            <p>Ce projet à été réalisé dans un contexte universitaire avec des contraintes ajoutées aléatoirement chaque semaine en visant différent points de gameplay</p>
-            <p>Il y a donc par exemple le principe de prendre en charge 4 joueurs dans un tableau de tournoi avec élimination directe</p>
-            <p>Ou encore la limitations des cartes champions qui ne peuvent être utilisés qu'une seule fois dans le tournoi</p>
-            <p>Le jeu est "terminé" car il est jouable et fini mais l'ajout d'explications de fonctionnement pour les joueurs sera potentiellement ajouté</p>
-            <p>Ainsi qu'un bestiaire de carte<br></br></p>
-            <h2>Outils utilisés</h2>
-            <p>Moteur de jeu : Unity</p>
-            <p>Logiciel pour les différents pixels arts : piskel, editeurs d'images gratuits</p>
-        </div>
+  <div class="slider-container">
+    <section id="about" class="slide active">
+        <h1>Projet "terminé"</h1><br></br>
+        <h2>À propos du jeu</h2>
+        <h3>Contexte</h3>
+        <p>Ce projet à été réalisé dans un contexte universitaire avec des contraintes ajoutées aléatoirement chaque semaine en visant différent points de gameplay</p>
+        <p>Il y a donc par exemple le principe de prendre en charge 4 joueurs dans un tableau de tournoi avec élimination directe</p>
+        <p>Ou encore la limitations des cartes champions qui ne peuvent être utilisés qu'une seule fois dans le tournoi</p>
+        <p>Le jeu est "terminé" car il est jouable et fini mais l'ajout d'explications de fonctionnement pour les joueurs sera potentiellement ajouté</p>
+        <p>Ainsi qu'un bestiaire de carte</p>
+        <p>Le jeu est exclusivement en anglais</p>
+        <p>Il est actuellement disponnible sur <a href="https://team-crevette.itch.io/cryptic-shop">itch.io</a></p>
     </section>
 
-    <section id = "projects">
-        <div class = "container">
-            <h1>L'univers</h1>
-            <p>L'univers se veut être un monde de fantasy ou chaque faction a son set de cartes</p>
-            <p>Les cartes de factions n'ont de cohérences qu'entre elles</p>
-            <h1>Le gameplay</h1>
-            <p>Chaque joueurs à un deck et une main et il y a aussi une zone d'achat commune aux deux joueurs qui s'actualise à chaque tour</p>
-            <p>Les cartes ont 3 différents types d'effets :</p>
-            <ul>
-                <li>    -Les ETB (enter the battelfield)</li>
-                <li>    -Les Actions</li>
-                <li>    -Les passifs</li>
-            </ul>
-            <p>Les ETB sont des effets qui ont lieu uniquement quand la carte arrive sur le champ de bataille</p>
-            <p>Les actions sont des capacités des cartes qui coutent du mana elles peuvent alors utiliser une capacitée voulue</p>
-            <p>Les passifs sont des actions qui se déclenchent au début du round qu'on le veuille ou non</p>
-        </div>
+    <section id="tools" class="slide">
+        <h2>Outils utilisés</h2>
+        <p>Moteur de jeu : Unity</p>
+        <p>Logiciel pour les différents pixels arts : piskel, editeurs d'images gratuits</p>
+        <p>Outil de partage de code : github</p>
+        <p>Langage : c#</p>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Personnes ayant travailler sur le projet</h2>
+    <section id="universe" class="slide">
+        <h2>L'univers</h2>
+        <p>L'univers se veut être un monde de fantasy ou chaque faction a son set de cartes</p>
+        <p>Les cartes de factions n'ont de cohérences qu'entre elles</p>
+        <p>Les différentes factions sont les suivantes</p>
+        <br></br>
+        <ul>
+            <li>La faction monstres (design visuel Arthur)</li>
+            <li>La faction des licornes (design visuel Manon)</li>
+            <li>La faction clockwork (design Noé)</li>
+            <li>La faction gobeline (design Noé)</li>
+            <li>La faction poisson (design Noé)</li>
+        </ul>
+        <br></br>
+        <p>Nous aurions aimé mettre plus de cohérence de faction mais du au temps limité du projet celà était trop compliqué à mettre en oeuvre</p>
+    </section>
+
+    <section id="gameplay" class="slide">
+        <h2>Le gameplay</h2>
+        <p>Chaque joueurs à un deck et une main et il y a aussi une zone d'achat commune aux deux joueurs qui s'actualise à chaque tour</p>
+        <p>Les joueurs ont des points de vie des golds et du mana</p>
+        <p>Il faut du mana pour jouer les cartes ou activer des capacités de carte</p>
+        <p>Il faut des golds pour acheter les cartes du shop</p>
+        <p>Il faut faire perdre ses pv à l'adversaire pour gagner</p>
+        <p>Les cartes ont 3 différents types d'effets :</p>
+        <ul>
+            <li>Les ETB </li>
+            <li>Les Actions</li>
+            <li>Les passifs</li>
+        </ul>
+        <p>Les ETB sont des effets qui ont lieu uniquement quand la carte arrive sur le champ de bataille</p>
+        <p>Les actions sont des capacités des cartes qui coutent du mana elles peuvent alors utiliser une capacitée voulue</p>
+        <p>Les passifs sont des actions qui se déclenchent au début du round qu'on le veuille ou non</p>
+    </section>
+
+    <section id="team" class="slide">
+      <h2>Personnes ayant travaillé sur le projet</h2>
             <p><a href=https://www.linkedin.com/in/arthur-queste-b58a76295>Queste Arthur</a></p>
             <p><a href=https://www.linkedin.com/in/manon-davion-71b98732a>Davion Manon</a></p>
             <p><a href="https://www.linkedin.com/in/noe-k/">Krzyszkowiak Noé</a></p>
-        </div>
     </section>
 
-    <footer>
-        <p>© 2024 Mon Portfolio</p>
-    </footer>
+  </div>
+
+  <script src="cryptic.js"></script>
 </body>
 </html>

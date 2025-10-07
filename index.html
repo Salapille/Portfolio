@@ -1,117 +1,118 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <meta charset="utf-8" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="function.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Bienvenue sur mon Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-     
-    <section id="about">
-        <div class="container">
-            <h2>À propos de moi</h2>
-            <p>Je m'appelle Noé KRZYSZKOWIAK.</p>
-            <p>Je suis un développeur passionné par le jeu vidéo et l'ia.</p>
-            <p>J'étudie à l'université d'Artois de Lens à la faculté des sciences Jean-Perrin.</p>
-        </div>
-    </section>
+  <!-- === Header principal === -->
+  <header class="site-header">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Mes Projets</h2>
-            <div class="project-card" onclick="openProject('pacman.html')">
-                <h3>Projet Pacman</h3>
-                <p>Le projet consiste à recréer le jeu Pacman en groupe en utilisant uniquement le outils de base du shell .<br /> Et en utilisant au minimum la structure de donnée des listes</p>
-                <p>Exemple de l'une des cartes ci-dessous</p>
-                <img id="pixel_art_img" src="images/pacman.png" alt="Description de l'image">
-                <p><a href="fichiers/PacmanGame.zip" download> Télécharger le fichier ZIP du projet</a></p>
-            </div>
-            <div class="project-card">
-                <h3>Base de donnée JO 2024</h3>
-                <p>Le but de ce projet est de ,en équipe réaliser une base de donnée sur les jeux olympiques de Paris 2024 .<br /> La base de donnée à été réalisés avant les compétitions .</p>
-                <a href="fichiers/Crevettes_semaine13.zip" download>Quelques algo de web scraping qui ne sont plus à jour</a>
-            </div>
-            <div class="project-card" onclick="openProject('cryptic_shop.html')">
-                <h3>Jeu Cryptic Shop</h3>
-                <p>Ce jeu est un projet d'université qui a eu lieu de mi janvier à mi mars environ</p>
-                <p>Le but était de créer un jeu en suivant différente contraintes techniques lors de la réalisation du jeu</p>
-                <p>Des camarades de promotions voulaient jouer au jeu alors on a fini par le mettre récemment sur itch.io</p>
-                <p><a href="https://team-crevette.itch.io/cryptic-shop">Itch.io</a></p>
-                <img id="pixel_art_img" src="images/crypticshop.png" alt="Image du menu principal du jeu">
-            </div>
-            <div class="project-card" onclick="openProject('pixel_art.html')">
-                <h3>Jeu PixelArt</h3>
-                <p>Le jeu se passe dans un monde médiéval fantassy mais pas que.<br />C'est un jeu plateformer 2D aventure et humoristique</p>
-                <p>Le jeu est encore au début du développement</p>
-                <img id="pixel_art_img" src="images/myGame.png" alt="Une image aproximative de mon jeu">
-            </div>
-             <div class="project-card" onclick="openProject('tron.html')">
-                <h3>Projet Tron</h3>
-                <p>Le projet est fait en c avec deux bibliothèque visuelles différentes
-                <p>il a pour but de reproduire Tron (les motos)</p>
-                <p>voici un zip du jeu il se lance avec un <a href = "fichiers/projettron.zip">make run-n ou bien make run-s</a>! sans espace pour le -(petite erreur de ma part) en fonction de la version que vous voulez</p>
-                <p>Pour plus de détails sur le projet cliquer sur la page</p>
-                <img id="tron_image" src="images/tron_sdl.png" alt="Image du menu du jeu tron">
-                <img id="tron_image" src="images/tron_ncurses.png" alt="Image du menu du jeu tron">
-            </div>
-        </div>
-    </section>
+  <!-- === Hero Section === -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Bienvenue sur mon Portfolio</h1>
+      <p>Développeur passionné par le web et les jeux vidéo</p>
+    </div>
+  </section>
 
-    <section id="other">
-        <div class="container">
-            <h3>Autres choses intéressantes à savoir sur moi</h3>
-            <ul>
-                <li>Participant àl'ARC 2023-2024 <a href="https://artoistv.univ-artois.fr/video/5712-arc-artois-programming-contest-2324/">team : STMG32G431CB</a> </li>
-                <li>Participant au SWERC 2023-2024 <a href="https://swerc.eu/2023/theme/scoreboard/domjudge.lip6.fr/public.html"> team : STM32G431CB</a> <a href="https://swerc.eu/2023/theme/scoreboard/domjudge.lip6.fr/public/team/49.html">overwiev of the team</a></li>
-                <li>Participant au SWERC 2024-2025 <a href="https://www.linkedin.com/posts/association-des-informaticiens-de-l-artois_swerc-swerc2024-programmation-activity-7269278992526987264-KnSL?utm_source=share&utm_medium=member_desktop"> team : test = doubt</a></li>
-                <li>Cambridge</li>
-                <li>PSC1</li>
-                <li>Permis B</li>
-                <li>Création de jeu de rôle</li>
-            </ul>
-        </div>
-    </section>
+  <!-- === À propos === -->
+  <section id="about" class="about">
+    <h2>À propos de moi</h2>
+    <p>Je suis étudiant en informatique, passionné par le développement de jeux et de logiciels.</p>
+  </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Mes contacts</h2>
-            <ul>
-                <li>Mail : noecool@outlook.fr</li>
-                <li>Numéro de téléphone : 0767383593</li>
-                <li>Tourcoing/Lens</li>
-            </ul>
-            <br />
-        </div>
-        <div class="container">
-            <h2>Me contacter</h2>
-            <form id="contact-form" action="mailto:noecool@outlook.fr" method="POST">
+  <!-- === Navigation latérale pour les projets === -->
+  <nav class="side-nav">
+    <ul>
+      <li><a href="#project1" class="active"></a></li>
+      <li><a href="#project2"></a></li>
+      <li><a href="#project3"></a></li>
+      <li><a href="#project4"></a></li>
+      <li><a href="#project5"></a></li>
+    </ul>
+  </nav>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+  <!-- === Section Projets === -->
+  <section id="projects" class="projects-title">
+    <h2>Mes Projets</h2>
+  </section>
 
-                <button type="submit">Envoyer</button>
-            </form>
-        </div>
-    </section>
+  <!-- === Projets plein écran === -->
+  <section id="project1" class="project-section">
+    <img src="images/pacman.png" alt="Projet 1" class="bg-img" />
+    <div class="overlay"></div>
+    <div class="content">
+      <a href="pacman.html" ><h1>Pacman shell</h1></a>
+      <p>Pacman réalisé sur un shell linux</p>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2024 Mon Portfolio</p>
-    </footer>
+  <section id="project2" class="project-section">
+    <img src="images/tron_ncurses.png" alt="Projet 2" class="bg-img" />
+    <div class="overlay"></div>
+    <div class="content">
+      <a href="tron.html"><h1>Tron en MVC en C</h1></a>
+      <p>Réalisation d'un jeu inspiré de tron réalisé en c avec deux bibliothèques graphiques</p>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <section id="project3" class="project-section">
+    <img src="images/myGame.png" alt="Projet 3" class="bg-img" />
+    <div class="overlay"></div>
+    <div class="content">
+      <a href = "pixel_art.html"><h1>Projet Perso pixel art</h1></a>
+      <p>Petit projet personnel sur unity d'un jeu en 2D pixelart</p>
+    </div>
+  </section>
+
+  <section id="project4" class="project-section">
+    <!--<img src="images/myGame.png" alt="Projet 4" class="bg-img" /> -->
+    <img src="images/crypticshop.png" alt="Projet 4" class="bg-img" />
+    <div class="overlay"></div>
+    <div class="content">
+      <a href = "cryptic_shop.html"><h1>Cryptic Shop</h1></a>
+      <p>Projet de base de donnée fait avant le début des JO de Paris </p>
+    </div>
+  </section>
+
+  <section id="project5" class="project-section">
+  <!--<img src="images/myGame.png" alt="Projet 4" class="bg-img" /> -->
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Base de donnée JO</h1>
+    <p>Projet de base de donnée fait avant le début des JO de Paris </p>
+  </div>
+  </section>
+
+  <!-- === Contact === -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Téléphone : 07 67 68 35 93</p>
+    <p>Mail : noe.krzyszkowiak.pro@gmail.com</p>
+    <p><br></br></p>
+    <form action="mailto:noe.krzyszkowiak.pro@gmail.com">
+      <textarea placeholder="Votre message" rows="5"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    © 2025 Mon Portfolio — On fait croire que j'ai des droits réservés avec le ©
+  </footer>
+
+  <script src="function.js"></script>
 </body>
 </html>

@@ -1,0 +1,95 @@
+/* Reset et base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* éviter scroll vertical si slider full width */
+  font-family: 'Poppins', sans-serif;
+  background-color: #0b0b0b;
+  color: #f1f1f1;
+}
+.project-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  padding: 1rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.project-nav button {
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s, background 0.3s;
+}
+.project-nav button.active,
+.project-nav button:hover {
+  color: #ff6f61;
+  background: rgba(255,111,97,0.1);
+  border-radius: 4px;
+}
+
+/* Slider conteneur */
+.slider-container {
+  display: flex;
+  height: 100vh;
+  transform: translateX(0%);
+  transition: transform 0.7s ease-in-out;
+  margin-top: 60px; /* si header fixe hauteur ≈ 60px */
+}
+.slide {
+  flex: 0 0 100%;
+  width: 100%;
+  padding: 2rem;
+  overflow-y: auto; /* pour sections longues */
+}
+
+/* Style des sections */
+.slide h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.slide h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.slide p, .slide ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+.slide ul li {
+  margin-bottom: 0.5rem;
+}
+
+.slide a {
+  color: #959595;
+}
+
+/* Version mobile / responsive */
+@media (max-width: 768px) {
+  .project-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .project-nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

@@ -1,10 +1,19 @@
-// Fonction pour afficher un projet
-function openProject(projectName) {
-    window.location.href = projectName
-}
-// Gestion du formulaire de contact
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Emp�che l'envoi r�el du formulaire
-    alert('Merci de nous avoir contact� !');
-    // Vous pouvez ajouter ici une logique d'envoi de formulaire r�el si n�cessaire
+const sections = document.querySelectorAll(".project-section");
+const navLinks = document.querySelectorAll(".side-nav a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - window.innerHeight / 2) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active");
+    }
+  });
 });

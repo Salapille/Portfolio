@@ -1,67 +1,78 @@
 <!DOCTYPE html>
-
-<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="fr">
 <head>
-    <meta charset="utf-8" />
-    <title>Pacman Shell</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tron — Détails du projet</title>
+  <link rel="stylesheet" href="style2.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Projet Tron</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#projects">Projet</a></li>
-                    <li><a href="#contact">Participants</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="project-header">
+    <h1>Tron</h1>
+    <nav class="project-nav">
+      <ul>
+        <li><button data-section="about" class="active">À propos</button></li>
+        <li><button data-section="tools">Outils</button></li>
+        <li><button data-section="universe">L’univers</button></li>
+        <li><button data-section="gameplay">Gameplay</button></li>
+        <li><button data-section="team">Participants</button></li>
+        <li><a href="index.html"><button >Home</button></a></li>
+        
+      </ul>
+    </nav>
+  </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>À propos du projet</h2>
-            <p>Le projet est fait en c avec deux bibliothèques graphiques différentes en format MVC</p>
-            <p>Le projet à été réalisé sur une période d'une semaine de manière individuelle</p>
-        </div>
+  <div class="slider-container">
+    <section id="about" class="slide active">
+        <h2>À propos du projet</h2>
+        <p>Le projet est fait en c avec deux bibliothèques graphiques différentes en format MVC</p>
+        <p>Le projet à été réalisé sur une période d'une semaine de manière individuelle</p>
+        <p>Pour lancer le jeu faire soit</p>
+        <p>make run-s</p>
+        <p>make run-n</p>
+        <p>-s pour la vue SDL2</p>
+        <p>-n pour la bue ncurses</p>
     </section>
 
-
-    <section id="projects">
-        <div class="container">
-            <h2>Les bibliothèques graphiques et le langage</h2>
-            <p>ncurses est une bibliothèque graphique qui reprends un affichage graphique basique et il est compliqué d'avoir un beau visuel dessus</p>
-            <p>SDL2 par contre est plus technique et permet donc des affichages plus variés et plus complexes</p>
-            <p>Ce sont des bibliothèques en langage C qui est le langage unique utilisé tout au long du projet</p>
-            <h2>Les fonctionnalités</h2>
-            <p>Le but du projet était de faire un tron fonctionnel mais il était possible de rajouter autant de fonctionnalités que voulu</p>
-            <p>Ajout du déplacement depuis le point de vue du "personnage"</p>
-            <p></p>
-            <p>Ajout d'un score et d'un Leaderboard associé et une saisie des noms</p>
-            <p>Le score est calculé différement en fonction des modes de jeu</p>
-            <p>Dans le mode de jeu avec la vitesse augmentant en fonction du  nombre de fois que l'on bat l'IA on a un multiplicateur bonus en fonction du niveau</p>
-            <p>Dans les autres modes de jeu seul le temps en vie du joueur est compté et pour un combat entre deux joueurs seul le gagnant entre son score</p>
-            <p></p>
-            <p>Dans le jeu les joueurs humains ont 3 vie </p>
-            <p>L'IA n' qu'une vie mais selon les modes de jeu cela à un impacte ou non</p>
-            <p>En mode vitesse accélérante à chaque fois que l'ia est battue les déplacements sont de plus en plus rapides</p>
-            <p>Dans le mode vitesse idéale la vitesse de l'ia ne change pas et la vaincre n'apporte rien à part ne pas perdre de vie</p>
-            <p>Dans le mode deux joueurs les deux personnes ont 3 vies</p>
-       </div>
+    <section id="tools" class="slide">
+        <h2>Outils utilisés</h2>
+        <p>Langage c</p>
+        <p>Bibliothèque graphique ncurses</p>
+        <p>Bibliothèque graphique SDL2</p>
+        <p>ncurses est une bibliothèque graphique qui reprends un affichage graphique basique et il est compliqué d'avoir un beau visuel dessus</p>
+        <p>SDL2 par contre est plus technique et permet donc des affichages plus variés et plus complexes</p>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Personnes ayant travailler sur le projet</h2>
+    <section id="universe" class="slide">
+        <h2>L'univers</h2>
+        <p>En théorie l'univers de Tron mais il faut un peu d'imagination</p>
+    </section>
+
+    <section id="gameplay" class="slide">
+        <h2>Le gameplay</h2>
+        <p>Le but du projet était de faire un tron fonctionnel mais il était possible de rajouter autant de fonctionnalités que voulu</p>
+        <p>Je me suis donc amusé</p>
+        <p>Ajout du déplacement depuis le point de vue du "personnage"</p>
+        <p></p>
+        <p>Ajout d'un score et d'un Leaderboard associé et une saisie des noms</p>
+        <p>Le score est calculé différement en fonction des modes de jeu</p>
+        <p>Dans le mode de jeu avec la vitesse augmentant en fonction du  nombre de fois que l'on bat l'IA on a un multiplicateur bonus en fonction du niveau</p>
+        <p>Dans les autres modes de jeu seul le temps en vie du joueur est compté et pour un combat entre deux joueurs seul le gagnant entre son score</p>
+        <p></p>
+        <p>Dans le jeu les joueurs humains ont 3 vie </p>
+        <p>L'IA n' qu'une vie mais selon les modes de jeu cela à un impacte ou non</p>
+        <p>En mode vitesse accélérante à chaque fois que l'ia est battue les déplacements sont de plus en plus rapides</p>
+        <p>Dans le mode vitesse idéale la vitesse de l'ia ne change pas et la vaincre n'apporte rien à part ne pas perdre de vie</p>
+        <p>Dans le mode deux joueurs les deux personnes ont 3 vies</p>
+    </section>
+
+    <section id="team" class="slide">
+      <h2>Personnes ayant travaillé sur le projet</h2>
             <p><a href="https://www.linkedin.com/in/noe-k/">Krzyszkowiak Noé</a></p>
-            <p>Pour plus de détails sur le projet vous pouvez téléchargez le fichier <a href = "fichiers/projettron.zip">zip</a></p>
-        </div>
     </section>
 
-    <footer>
-        <p>© 2024 Mon Portfolio</p>
-    </footer>
+  </div>
+
+  <script src="cryptic.js"></script>
 </body>
 </html>

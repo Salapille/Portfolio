@@ -1,66 +1,76 @@
 ﻿<!DOCTYPE html>
-
-<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="fr">
 <head>
-    <meta charset="utf-8" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="function.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel art game — Détails du projet</title>
+  <link rel="stylesheet" href="style2.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Bienvenue sur mon Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#projects">Projet</a></li>
-                    <li><a href="#contact">Participants</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="project-header">
+    <h1>Cryptic Shop</h1>
+    <nav class="project-nav">
+      <ul>
+        <li><button data-section="about" class="active">À propos</button></li>
+        <li><button data-section="tools">Outils</button></li>
+        <li><button data-section="universe">L’univers</button></li>
+        <li><button data-section="gameplay">Gameplay</button></li>
+        <li><button data-section="team">Participants</button></li>
+        <li><a href="index.html"><button >Home</button></a></li>
+        
+      </ul>
+    </nav>
+  </header>
 
-    <section id="about">
-        <div class="container">
-            <h1>Projet toujours en cours</h1>
-            <h2>À propos du jeu</h2>
-            <p>Le jeu se passe dans un monde médiéval fantasy futuriste</p>
-            <p>Jeu d'aventure det d'humour Il pour but d'être agréable à jouer pour tous les niveaux de jeu.</p>
-            <p>Plusieurs difficuktés et artefacts cachés pourront aporter du challenge à ceux qui en recherche.</p>
-            <p>Et un lore plus ou moins sérieux pour ceux curieux de cet univers.</p>
-            <h2>Outils utilisés</h2>
-            <p>Moteur de jeu : Unity</p>
-            <p>Logiciel pour les différents pixels arts : piskel</p>
-            <p>Logiciel en aprentissage : aseprite</p>
-            <h2>Les fonctionnalités ajoutés</h2>
-            <h3>Quality of life addition</h3>
-            <p>Le coyote jump à été ajouté pour rendre le platforming plus agréable</p>
-            <p>Le coyote jump consiste à laisser un petit délai supplémentaire au joueur pour sauter de la plateforme après en être tout de même descendu</p>
-            <p>Ajout de l'input lag</p>
-            <p>Cela permet d'appuyer sur une touche avant la fin de l'action précèdente mais de la voir tout de même s'éxécuter</p>
-            <h3>Gameplay addition</h3>
-            <p>Ajout de la possibilité de s'accroupir (avec impossibilité de sauter quand acroupis) mais pas d'animation pour le moment</p>
-            <p>Ajout de plateforme mobiles avec possibilité de sauter dessus et de rester sur la plateforme sans avoir à la "suivre"</p>
-            <p>Ajout de tunnels d'air qui propulsent le joueur vers le haut pas de graphisme pour le moment</p>
-            <p>Ajout de zone de soin</p>
-            <p>Ajout de zone de dégats</p>
-            <p>Ajout de zone de vitesse</p>
-            <p>Ajout de checkpoint</p>
-            <p>Ajout de "death zone" qui téléporte au dernier checkpoint, et est utilisée sur les obstacles et en tant que délimiteur de zone</p>
-        </div>
+  <div class="slider-container">
+    <section id="about" class="slide active">
+        <h1>Projet toujours en cours</h1>
+        <h2>À propos du jeu</h2>
+        <p>Le jeu se passe dans un monde médiéval fantasy avec une partie de science fiction</p>
+        <p>Jeu d'aventure det d'humour Il pour but d'être agréable à jouer pour tous les niveaux de jeu.</p>
+        <p>Plusieurs difficultés et artefacts cachés pourront aporter du challenge à ceux qui en recherche.</p>
+        <p>Et un lore plus ou moins sérieux pour ceux curieux de cet univers.</p>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Personnes ayant travailler sur le projet</h2>
-            <p><a href="https://www.linkedin.com/in/juliette-martin-b34234294/">Martin Juliette</a></p>
+    <section id="tools" class="slide">
+        <h2>Outils utilisés</h2>
+        <p>Moteur de jeu : Unity</p>
+        <p>Logiciel pour les différents pixels arts : piskel</p>
+        <p>Logiciel en aprentissage : aseprite</p>
+    </section>
+
+    <section id="universe" class="slide">
+        <h2>L'univers</h2>
+        <p>Le jeu se passe dans un monde médiéval fantasy avec une partie de science fiction</p>
+        <p>Je n'en dévoile pas plus pour le moment</p>
+    </section>
+
+    <section id="gameplay" class="slide">
+        <h2>Les fonctionnalités ajoutés</h2>
+        <h3>Quality of life addition</h3>
+        <p>Le coyote jump à été ajouté pour rendre le platforming plus agréable</p>
+        <p>Le coyote jump consiste à laisser un petit délai supplémentaire au joueur pour sauter de la plateforme après en être tout de même descendu</p>
+        <p>Ajout de l'input lag</p>
+        <p>Cela permet d'appuyer sur une touche avant la fin de l'action précèdente mais de la voir tout de même s'éxécuter</p>
+        <h3>Gameplay addition</h3>
+        <p>Ajout de la possibilité de s'accroupir (avec impossibilité de sauter quand acroupis) mais pas d'animation pour le moment</p>
+        <p>Ajout de plateforme mobiles avec possibilité de sauter dessus et de rester sur la plateforme sans avoir à la "suivre"</p>
+        <p>Ajout de tunnels d'air qui propulsent le joueur vers le haut pas de graphisme pour le moment</p>
+        <p>Ajout de zone de soin</p>
+        <p>Ajout de zone de dégats</p>
+        <p>Ajout de zone de vitesse</p>
+        <p>Ajout de checkpoint</p>
+        <p>Ajout de "death zone" qui téléporte au dernier checkpoint, et est utilisée sur les obstacles et en tant que délimiteur de zone</p>
+    </section>
+
+    <section id="team" class="slide">
+      <h2>Personnes ayant travaillé sur le projet</h2>
+            <p><a href="https://www.linkedin.com/in/juliette-martin-b34234294/">Martin Juliette</a> (concept art)</p>
             <p><a href="https://www.linkedin.com/in/noe-k/">Krzyszkowiak Noé</a></p>
-        </div>
     </section>
 
-    <footer>
-        <p>© 2024 Mon Portfolio</p>
-    </footer>
+  </div>
+
+  <script src="cryptic.js"></script>
 </body>
 </html>
