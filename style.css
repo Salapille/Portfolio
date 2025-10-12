@@ -47,7 +47,7 @@ html, body {
 .hero {
   position: relative;
   height: 100vh;
-  background: url('images/myGame.png') center / cover no-repeat;
+  background: url('images/pixel_art/myGame.png') center / cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;

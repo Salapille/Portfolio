@@ -1,63 +1,89 @@
 ﻿<!DOCTYPE html>
-
-<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="fr">
 <head>
-    <meta charset="utf-8" />
-    <title>Pacman Shell</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pacman — Détails du projet</title>
+  <link rel="stylesheet" href="style2.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Projet Shell</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#projects">Projet</a></li>
-                    <li><a href="#contact">Participants</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="project-header">
+    <h1>Pacman sur shell</h1>
+    <nav class="project-nav">
+      <ul>
+        <li><button data-section="about" class="active">À propos</button></li>
+        <li><button data-section="role">Rôle</button></li>
+        <li><button data-section="tools">Outils</button></li>
+        <li><button data-section="gameplay">Gameplay</button></li>
+        <li><button data-section="team">Participants</button></li>
+        <li><a href="index.html"><button >Home</button></a></li>
+        
+      </ul>
+    </nav>
+  </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>À propos du projet</h2>
-            <p>Un thème libre pour un projet de Shell à faire individuellement ou en groupe à été donné.</p>
-            <p>Un nombre minimal de fonction par personnes avec des contraintes était imposé.</p>
-            <p>En équipe de trois nous avons choisi de reproduire le jeu Pacman en Shell tout en aportant notre touche personnelle.</p>
-        </div>
+  <div class="slider-container">
+    <section id="about" class="slide-active">
+      <img src="images/pacman/pacman.png" alt="map" class="bg-img">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>À propos du projet</h2>
+        <p>Un thème libre pour un projet de Shell à faire individuellement ou en groupe à été donné.</p>
+        <p>Un nombre minimal de fonction par personnes et des contraintes étaient imposés.</p>
+        <p>En équipe de trois nous avons choisi de reproduire le jeu Pacman en Shell tout en aportant notre touche personnelle.</p>
+        <p>Et voici le <a href="fichiers/PacmanGame.zip">zip du jeu</a> pour les plus curieux</p>
+      </div>
     </section>
 
-
-    <section id="projects">
-        <div class="container">
-            <h2>Mes Implications dans le projet</h2>
-            <h3>Gestion de la lecture des cartes</h3>
-            <p>Mon but étais de trouver un moyen de lire et d'afficher les différentes cartes du jeu.</p>
-            <p>Pour cela j'ai créer une norme pour les cartes (a quoi correspondait les caractères) pour pouvoir transformer correctement les cartes qui étaient des fichiers texte</p>
-            <p>Il y a donc une fonction qui lit la carte de jeu qui stock les coordonnées d'origine de pacman et des fantômes et garde en mémoire le reste de la carte'</p>
-            <h3>Creation de carte</h3>
-            <p>Création des 4 cartes du jeu avec bloc-note de windows</p>
-            <p>Ajout de la lecture d'une carte faite par l'utilisateur sous conditions de respecter celles du readme.</p>
-            <h3>Ajout des différents menus de choix difficultés</h3>
-            <p>Ajout de différents menus pour permettre au joueur de choisir la façon dont il préfère jouer.</p>
-            <p>Avec choix de la difficulté et ou des cartes en laissant la possibilité de choisir au hasard n'importe quel aspect.</p>
-        </div>
+    <section id="role" class="slide-active">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Mes Implications dans le projet</h2>
+        <h3>Gestion de la lecture des cartes</h3>
+        <p>Mon but étais de trouver un moyen de lire et d'afficher les différentes cartes du jeu.</p>
+        <p>Pour cela j'ai créer une norme pour les cartes (a quoi correspondait les caractères) pour pouvoir transformer correctement les cartes qui étaient des fichiers texte</p>
+        <p>Il y a donc une fonction qui lit la carte de jeu qui stock les coordonnées d'origine de pacman et des fantômes et garde en mémoire le reste de la carte</p>
+        <h3>Creation de carte</h3>
+        <p>Création des 4 cartes du jeu avec bloc-note de windows</p>
+        <p>Ajout de la lecture d'une carte faite par l'utilisateur sous conditions de respecter celles du readme.</p>
+        <h3>Ajout des différents menus de choix difficultés</h3>
+        <p>Ajout de différents menus pour permettre au joueur de choisir la façon dont il préfère jouer.</p>
+        <p>Avec choix de la difficulté et ou des cartes en laissant la possibilité de choisir au hasard n'importe quel aspect.</p>
+      </div>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Personnes ayant travailler sur le projet</h2>
-            <p><a href="https://www.linkedin.com/in/manon-davion-71b98732a/">Davion Manon</a></p>
-            <p><a href="https://www.linkedin.com/in/arthur-queste-b58a76295/">Queste Arthur</a></p>
+    <section id="tools" class="slide-active">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Outils utilisés</h2>
+        <p>Shell de linux (ubuntu) sans bibliothèque externe</p>
+        <p>Block-note pour la réalisation de carte</p>
+      </div>
+    </section>
+
+    <section id="gameplay" class="slide-active">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Le gameplay</h2>
+        <p>On a ici affaire au jeu de pacman hormis quelques changement</p>
+        <p>On a toujours les boules qui permettent de manger les fantômes mais pas de bonus tel que les cerises ou autre</p>
+        <p>Le nombre de fantômes des cartes varie en fonction de la difficulté et de la carte</p>
+        <p>Une carte plus grande se vera octroyée plus de fantômes (pas forcément vrai pour les cartes custom par les joueurs)</p>
+      </div>
+    </section>
+
+    <section id="team" class="slide-active">
+      <div class="overlay"></div>
+      <div class="content">
+      <h2>Personnes ayant travaillé sur le projet</h2>
+            <p><a href=https://www.linkedin.com/in/arthur-queste-b58a76295>Queste Arthur</a></p>
+            <p><a href=https://www.linkedin.com/in/manon-davion-71b98732a>Davion Manon</a></p>
             <p><a href="https://www.linkedin.com/in/noe-k/">Krzyszkowiak Noé</a></p>
-            <p>Pour plus de détails sur le projet vous pouvez téléchargez le fichier zip</p>
-        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>© 2024 Mon Portfolio</p>
-    </footer>
+  </div>
+
+  <script src="cryptic.js"></script>
 </body>
 </html>
